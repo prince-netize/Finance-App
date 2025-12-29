@@ -31,8 +31,6 @@ const RegisterScreen = () => {
         iconName="mail-outline"
         value={email}
         onChangeText={setEmail}
-        secureTextEntry
-        showEye
       />
 
       <Text style={styles.label}>Contact Number</Text>
@@ -40,8 +38,6 @@ const RegisterScreen = () => {
         iconName="call-outline"
         value={contact}
         onChangeText={setContact}
-        secureTextEntry
-        showEye
       />
 
       <Text style={styles.label}>Password</Text>
