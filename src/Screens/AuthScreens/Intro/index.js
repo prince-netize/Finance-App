@@ -66,7 +66,7 @@ export default function IntroScreen({ navigation }) {
     }).start();
   };
 
-  const onSkip = () => navigation.replace('RoleScreen');
+  const onSkip = () => navigation.replace('Login');
 
   const onNext = () => {
     const nextIndex = currentSlide + 1;
@@ -74,7 +74,7 @@ export default function IntroScreen({ navigation }) {
       animateToSlide(nextIndex);
       sliderRef.current?.goToSlide(nextIndex, true);
     } else {
-      navigation.replace('RoleScreen');
+      navigation.replace('Login');
     }
   };
 
@@ -114,7 +114,7 @@ export default function IntroScreen({ navigation }) {
       <View style={styles.buttons}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#ECECEC',
+            backgroundColor: '#E6E6E6',
             height: 40,
             width: 60,
             borderRadius: 12,
@@ -134,7 +134,7 @@ export default function IntroScreen({ navigation }) {
                 width: 50,
                 height: 50,
                 borderRadius: 25,
-                backgroundColor: '#19D666',
+                backgroundColor: '#465EFD',
                 justifyContent: 'center',
                 alignItems: 'center',
                 top: 5,
@@ -153,7 +153,7 @@ export default function IntroScreen({ navigation }) {
                 cy={size / 2}
                 r={radius}
                 strokeWidth={strokeWidth}
-                stroke="#19D666"
+                stroke="#465EFD"
                 fill="none"
                 strokeDasharray={circumference}
                 strokeDashoffset={animatedStroke}
