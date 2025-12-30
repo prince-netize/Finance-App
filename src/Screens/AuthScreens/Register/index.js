@@ -58,12 +58,7 @@ const RegisterScreen = () => {
         showEye
       />
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => {
-          navigation.navigate('VerificationOTP');
-        }}
-      >
+      <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
     </ScrollView>
